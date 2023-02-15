@@ -1,0 +1,11 @@
+<div>
+  <ul><label for="Add">New ToDo</label><br>    <br>
+    <input id="Add" required type="text" [(ngModel)]="content">
+    <button (click)="addTodo()">Add</button>
+    <br>
+    <br>
+    <br>
+
+    <li *ngFor="let item of getTodos();let i=index">{{i+1}} - {{item.content}}     <button>X</button></li>
+  </ul>
+</div>
