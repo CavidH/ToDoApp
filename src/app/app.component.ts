@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,30 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ToDoApp';
+
+  getTodos(): ToDo[] {
+    return [{
+      id: 1,
+      content: "sdsd",
+      status: true,
+    },{
+      id: 1,
+      content: "sdsd",
+      status: true,
+    },{
+      id: 1,
+      content: "sdsd",
+      status: true,
+    },{
+      id: 1,
+      content: "sdsd",
+      status: true,
+    }]
+  }
 }
 
 class ToDo {
-  
+  id: number;
+  content: string;
+  status: boolean;
 }
